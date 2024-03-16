@@ -22,7 +22,8 @@ return {
 
       lsp_zero.setup_servers({
         "lua_ls",
-        "nil_ls"
+        "nil_ls",
+        "tsserver"
       })
 
       local function on_attach(_, bufnr)
@@ -38,6 +39,7 @@ return {
         },
         servers = {
           ['lua_ls'] = { 'lua' },
+          ['nil_ls'] = { 'nix' },
         }
       })
 
