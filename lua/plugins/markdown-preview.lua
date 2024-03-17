@@ -5,5 +5,6 @@ return {
   build = "cd app && yarn install",
   init = function()
     vim.g.mkdp_filetypes = { "markdown" }
+    vim.keymap.set('n', '<leader>mp', ':MarkdownPreview <CR>', {})
   end,
 }
