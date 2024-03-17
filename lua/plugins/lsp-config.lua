@@ -15,6 +15,7 @@ return {
         "tsserver",
         "marksman",
         "emmet_ls",
+        "tailwindcss"
       })
 
       lsp_zero.set_sign_icons({
@@ -37,6 +38,7 @@ return {
       lspconfig.tsserver.setup({})
       lspconfig.marksman.setup({})
       lspconfig.emmet_ls.setup({})
+      lspconfig.tailwindcss.setup({})
     end,
     dependencies = { "neovim/nvim-lspconfig" },
   },
