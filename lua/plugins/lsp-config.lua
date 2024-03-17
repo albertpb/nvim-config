@@ -13,6 +13,8 @@ return {
         "lua_ls",
         "nil_ls",
         "tsserver",
+        "marksman",
+        "emmet_ls",
       })
 
       lsp_zero.set_sign_icons({
@@ -33,6 +35,8 @@ return {
       lspconfig.html.setup({})
       lspconfig.nil_ls.setup({})
       lspconfig.tsserver.setup({})
+      lspconfig.marksman.setup({})
+      lspconfig.emmet_ls.setup({})
     end,
     dependencies = { "neovim/nvim-lspconfig" },
   },
