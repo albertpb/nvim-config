@@ -15,7 +15,7 @@ return {
         "tsserver",
         "marksman",
         "emmet_ls",
-        "tailwindcss"
+        "tailwindcss",
       })
 
       lsp_zero.set_sign_icons({
@@ -30,6 +30,9 @@ return {
       end
 
       lsp_zero.on_attach(on_attach)
+
+      vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
+      vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
