@@ -11,7 +11,7 @@ return {
         null_ls.builtins.formatting.stylua,
         -- javascript
         null_ls.builtins.formatting.prettier,
-        require("none-ls.formatting.eslint_d"),
+        -- require("none-ls.formatting.eslint_d"),
         -- python
         null_ls.builtins.formatting.isort,
         null_ls.builtins.formatting.black,
