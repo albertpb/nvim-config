@@ -33,6 +33,7 @@ return {
 
       vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
       vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+      vim.keymap.set("n", "gy", "<cmd>lua vim.lsp.buf.hover()<CR>", { noremap = true, silent = true })
 
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
