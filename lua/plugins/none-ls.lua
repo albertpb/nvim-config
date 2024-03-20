@@ -15,6 +15,10 @@ return {
         -- python
         null_ls.builtins.formatting.isort,
         null_ls.builtins.formatting.black,
+
+        -- terraform
+        null_ls.builtins.formatting.terraform_fmt,
+        null_ls.builtins.diagnostics.terraform_validate,
       },
     })
 

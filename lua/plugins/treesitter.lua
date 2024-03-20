@@ -19,9 +19,11 @@ return {
         "markdown",
         "markdown_inline",
         "yaml",
-        "toml" },
+        "toml",
+        "terraform",
+      },
       highlight = { enable = true },
       indent = { enable = true },
     })
-  end
+  end,
 }
