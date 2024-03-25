@@ -17,6 +17,7 @@ return {
         "emmet_ls",
         "tailwindcss",
         "terraformls",
+        "yamlls",
       })
 
       lsp_zero.set_sign_icons({
@@ -45,6 +46,7 @@ return {
       lspconfig.emmet_ls.setup({})
       lspconfig.tailwindcss.setup({})
       lspconfig.terraformls.setup({})
+      lspconfig.yamlls.setup({})
     end,
     dependencies = { "neovim/nvim-lspconfig" },
   },
