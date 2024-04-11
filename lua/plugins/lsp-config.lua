@@ -45,6 +45,10 @@ return {
         vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>', opts)
         vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>', opts)
         vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>', opts)
+
+        vim.keymap.set({ 'n', 'x' }, '<F3>', function()
+          vim.lsp.buf.format({ async = false, timeout_ms = 15000 })
+        end, opts)
       end
 
       lsp_zero.on_attach(on_attach)
