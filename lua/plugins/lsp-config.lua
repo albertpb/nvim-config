@@ -12,6 +12,7 @@ return {
       lsp_zero.setup_servers({
         "lua_ls",
         "nil_ls",
+        "eslint",
         "tsserver",
         "marksman",
         "emmet_ls",
@@ -61,6 +62,7 @@ return {
       lspconfig.lua_ls.setup({})
       lspconfig.html.setup({})
       lspconfig.nil_ls.setup({})
+      lspconfig.eslint.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.marksman.setup({})
       lspconfig.emmet_ls.setup({})
