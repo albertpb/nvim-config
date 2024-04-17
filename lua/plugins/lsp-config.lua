@@ -48,7 +48,8 @@ return {
         vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>', opts)
 
         vim.keymap.set({ 'n', 'x' }, '<F3>', function()
-          vim.lsp.buf.format({ async = false, timeout_ms = 15000 })
+          -- vim.lsp.buf.format({ async = false, timeout_ms = 15000 })
+          require("conform").format({ bufnr })
         end, opts)
       end
 
