@@ -20,8 +20,8 @@ return {
 
 			java = { "google-java-format" },
 
-			scss = { "stylelint" },
-			css = { "stylelint" },
+			scss = { "prettier" },
+			css = { "prettier" },
 		},
 	},
 }

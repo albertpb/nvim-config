@@ -89,7 +89,6 @@ return {
 				},
 				root_dir = working_dir,
 			})
-			lspconfig.stylelint_lsp.setup({})
 		end,
 		dependencies = { "neovim/nvim-lspconfig" },
 	},
