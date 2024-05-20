@@ -20,6 +20,7 @@ return {
 				"terraformls",
 				"yamlls",
 				"jdtls",
+				"stylelint_lsp",
 			})
 
 			lsp_zero.set_sign_icons({
@@ -88,6 +89,7 @@ return {
 				},
 				root_dir = working_dir,
 			})
+			lspconfig.stylelint_lsp.setup({})
 		end,
 		dependencies = { "neovim/nvim-lspconfig" },
 	},

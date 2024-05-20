@@ -10,7 +10,6 @@ return {
 			typescript = { "prettier" },
 			javascriptreact = { "prettier" },
 			typescriptreact = { "prettier" },
-			css = { "prettier" },
 			html = { "prettier" },
 			json = { "prettier" },
 			yaml = { "prettier" },
@@ -20,6 +19,9 @@ return {
 			nix = { "nixfmt" },
 
 			java = { "google-java-format" },
+
+			scss = { "stylelint" },
+			css = { "stylelint" },
 		},
 	},
 }
