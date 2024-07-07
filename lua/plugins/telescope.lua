@@ -17,7 +17,8 @@ return {
 
 			vim.keymap.set("n", "<C-p>", telescope.find_files, {})
 			vim.keymap.set("n", "<leader>fg", telescope_resume, {})
-		end,
+		  vim.keymap.set("n", "<leader>fd", telescope.diagnostics, {})
+    end,
 	},
 	{
 		"nvim-telescope/telescope-ui-select.nvim",
