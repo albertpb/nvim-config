@@ -13,7 +13,7 @@ return {
 				"lua_ls",
 				"nil_ls",
 				"eslint",
-				"tsserver",
+				"ts_ls",
 				"marksman",
 				"emmet_ls",
 				"tailwindcss",
@@ -75,7 +75,7 @@ return {
 			lspconfig.html.setup({})
 			lspconfig.nil_ls.setup({})
 			lspconfig.eslint.setup({})
-			lspconfig.tsserver.setup({})
+			lspconfig.ts_ls.setup({})
 			lspconfig.marksman.setup({})
 			lspconfig.emmet_ls.setup({})
 			lspconfig.tailwindcss.setup({})
