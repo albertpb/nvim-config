@@ -4,24 +4,43 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/681b5ed4-0a65-4d06-9b87-54cbd5f573c9";
-      fsType = "ext4";
-    };
+  fileSystems."/" = {
+    device = "/dev/disk/by-uuid/681b5ed4-0a65-4d06-9b87-54cbd5f573c9";
+    fsType = "ext4";
+  };
 
-  fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/cc8e728d-3a09-40da-9e0b-498ca60d1a93";
-      fsType = "ext4";
-    };
+  fileSystems."/home" = {
+    device = "/dev/disk/by-uuid/cc8e728d-3a09-40da-9e0b-498ca60d1a93";
+    fsType = "ext4";
+  };
 
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/03BA-C50A";
-      fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
-    };
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-uuid/03BA-C50A";
+    fsType = "vfat";
+    options = [ "fmask=0022" "dmask=0022" ];
+  };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/7c3921e4-89dd-4d1a-8d5a-c0a097b4221c"; }
-    ];
+    [{ device = "/dev/disk/by-uuid/7c3921e4-89dd-4d1a-8d5a-c0a097b4221c"; }];
+
+  fileSystems."/mnt/GAMES-EX" = {
+    device = "/dev/disk/by-uuid/86966D2C966D1E45";
+    fsType = "ntfs-3g";
+  };
+
+  fileSystems."/mnt/GAMES" = {
+    device = "/dev/disk/by-uuid/264820EB4820BB85";
+    fsType = "ntfs-3g";
+  };
+
+  fileSystems."/mnt/DATA" = {
+    device = "/dev/disk/by-uuid/9C4A76964A766D40";
+    fsType = "ntfs-3g";
+  };
+
+  fileSystems."/mnt/GAMES2" = {
+    device = "/dev/disk/by-uuid/ECEC9EA6EC9E6B1A";
+    fsType = "ntfs-3g";
+  };
 
 }

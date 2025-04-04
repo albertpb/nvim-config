@@ -114,6 +114,7 @@ in {
       ++ [ (import ./../../hosts/nixos-gaming/user.nix) ]
       ++ [ (import ./../../hosts/nixos-gaming/services) ]
       ++ [ (import ./../../hosts/nixos-gaming/program.nix) ]
+      ++ [ (import ./../../hosts/nixos-gaming/steam.nix) ]
       ++ [ (import ./../../hosts/nixos-gaming/network.nix) ]
       ++ [ (import ./configuration.nix) ] ++ [ (import ./network.nix) ]
       ++ [ (import ./system.nix) ] ++ [ (import ./fonts.nix) ]
