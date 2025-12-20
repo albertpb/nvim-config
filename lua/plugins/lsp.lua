@@ -5,6 +5,14 @@ return {
     vim.lsp.enable('nil_ls')
     vim.lsp.enable('gopls')
 
+    vim.lsp.config('nil_ls', {
+      ['nil'] = {
+        formatting = {
+          command = "nixfmt",
+        },
+      }
+    })
+
     local map = vim.keymap.set
     map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
     map("n", "gsd", function()
