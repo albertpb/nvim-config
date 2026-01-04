@@ -14,6 +14,20 @@ return {
       }
     })
 
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities.textDocument.completion.completionItem.snippetSupport = true
+    vim.lsp.enable('jsonls', {
+      capabilities = capabilities,
+    })
+
+    vim.lsp.enable('cssls', {
+      capabilities = capabilities,
+    })
+
+    vim.lsp.enable('html', {
+      capabilities = capabilities,
+    })
+
     local map = vim.keymap.set
     map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
     map("n", "gsd", function()
